@@ -99,6 +99,119 @@ tbody tr:hover td{background:rgba(255,255,255,0.02);color:var(--text);}
 .ins-val{color:var(--text);font-weight:600;font-family:'DM Mono',monospace;font-size:11px;}
 .bar-bg{flex:1;height:4px;background:var(--bg3);border-radius:2px;overflow:hidden;margin:0 8px;}
 .bar-fill{height:100%;border-radius:2px;}
+  /* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 992px){
+
+  .content{
+    padding: 1rem;
+  }
+
+  .header{
+    padding: 1rem;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .kpi-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .charts-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .sql-wrap{
+    grid-template-columns: 1fr;
+  }
+
+  .ins-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px){
+
+  .tabs{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0.5rem;
+  }
+
+  .tab{
+    flex-shrink: 0;
+  }
+
+  .kpi-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .logo-text{
+    font-size: 15px;
+  }
+
+  .badge{
+    font-size: 10px;
+  }
+
+  .chart-card{
+    padding: 1rem;
+  }
+
+  .sql-code{
+    font-size: 10px;
+  }
+
+  table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+  }
+}
+
+@media (max-width: 480px){
+
+  .content{
+    padding: 0.75rem;
+  }
+
+  .header{
+    padding: 0.75rem;
+  }
+
+  .logo{
+    width:100%;
+  }
+
+  .logo-text{
+    font-size:14px;
+  }
+
+  .logo-sub{
+    font-size:10px;
+  }
+
+  .kpi-value{
+    font-size:24px !important;
+  }
+
+  .chart-title{
+    font-size:14px;
+  }
+
+  .chart-sub{
+    font-size:11px;
+  }
+
+  .sql-head{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+}
 </style>
 </head>
 <body>
